@@ -10,6 +10,8 @@ Usage
 
 When you type a Gradle task wrong, just type `fuck` after that and corrected task will be run. 
 
+![](art/gradle.gif)
+
 Install
 -------
 
