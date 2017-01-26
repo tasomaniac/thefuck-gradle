@@ -17,9 +17,20 @@ Install
 
 Copy the `gradle.py` file to `~/.thefuck/rules/` folder.
 
-After that you have to enable it. 
+We need to enable it now:
 
-First way is to edit `~/.thefuck/settings.py` file and it to the rules. 
+### 1. Easy way
+
+Add an environment variable. In environment variable, you can directly add `DEFAULT_RULES`. Here is how:
+
+```
+export THEFUCK_RULES=DEFAULT_RULES:gradle
+```
+This was, you will keep your default fuck rules and `gradle` will only be an addition. 
+
+### 2. Moar config
+
+Edit `~/.thefuck/settings.py` file to modify more settings. 
 
 ```
 rules = ['gradle']
@@ -29,13 +40,7 @@ no_colors = False
 debug = False
 ```
 
-When it is done this way, I couldn't find a way to keep `DEFAULT_RULES`, you have to add the other rules manually, which is bad. 
-
-The other way is to add an environment variable. In environment variable, you can directly add `DEFAULT_RULES`. Here is how:
-
-```
-export THEFUCK_RULES=DEFAULT_RULES:gradle
-```
+Although this has many more configuration, I couldn't find a way to keep the default fuck rules. It seems that the only was is to list all the rules you want manually. 
 
 License
 -------
